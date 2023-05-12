@@ -4,6 +4,7 @@
 Analisi del dataset relativo agli aeroporti mondiali
 
 Analisi effettuate:
+- Componenti connesse
 - Analisi della centralità (individuazione hub)
     - Grado
     - Betweenness
