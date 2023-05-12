@@ -5,6 +5,9 @@ Analisi del dataset relativo agli aeroporti mondiali
 
 Analisi effettuate:
 - Analisi della centralità (individuazione hub)
+    - Grado
+    - Betweenness
+    - Closeness
 - Analisi della resistenza della rete a:
     - Attacchi randomici
     - Attacchi mirati agli hub più importanti
