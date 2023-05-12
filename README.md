@@ -12,8 +12,13 @@ Analisi effettuate:
 - Analisi della resistenza della rete a:
     - Attacchi randomici
     - Attacchi mirati agli hub più importanti
+        - Grado
+        - Betweenness
+        - Closeness
 - Analisi della densità
 - Analisi delle comunità
+   - USA
+   - Europa
 - Simulazione tramite SIS model
 
 [Fonte del dataset](https://github.com/CambridgeUniversityPress/FirstCourseNetworkScience/tree/master/datasets/openflights)
