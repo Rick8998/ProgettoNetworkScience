@@ -124,7 +124,7 @@ class Simulation:
         except IndexError:
             raise IndexError('Simulation step %i out of range' % step)
 
-    def draw(self, step=-1, labels=None, **kwargs):
+    def draw(self, positions, step=-1, labels=None,**kwargs):
         '''
         Use networkx.draw to draw a simulation state with nodes colored by
         their state value. By default, draws the current state.
@@ -139,7 +139,7 @@ class Simulation:
         '''
         state = self.state(step)
         node_colors = [self._categorical_color(state[n]) for n in self.G.nodes]
-        nx.draw(self.G, pos=self._pos, node_color=node_colors, **kwargs)
+        nx.draw_networkx(self.G, node_color=node_colors, pos=positions, **kwargs)
 
         if labels is None:
             labels = sorted(set(state.values()), key=self._value_index.get)
